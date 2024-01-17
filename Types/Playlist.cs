@@ -5,7 +5,7 @@ namespace Odyssey.Liftoff;
 [GraphQLDescription("A curated collection of tracks designed for a specific activity or mood.")]
 public class Playlist
 {
-    [GraphQLDescription("The Spotify ID for the playlist.")]
+    [GraphQLDescription("The ID for the playlist.")]
     [ID]
     public string Id { get; }
 
