@@ -14,7 +14,7 @@ public class Mutation
         {
             var snapshot_id = await spotifyService.AddTracksToPlaylistAsync(
                 input.PlaylistId,
-                input.Position,
+                null,
                 string.Join(",", input.Uris)
             );
 

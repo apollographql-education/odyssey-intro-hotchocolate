@@ -2,7 +2,7 @@
 
 namespace Odyssey.Liftoff;
 
-[GraphQLDescription("Information about a playlist owned by a Spotify user")]
+[GraphQLDescription("A curated collection of tracks designed for a specific activity or mood.")]
 public class Playlist
 {
     [GraphQLDescription("The Spotify ID for the playlist.")]
@@ -12,9 +12,7 @@ public class Playlist
     [GraphQLDescription("The name of the playlist.")]
     public string Name { get; set; }
 
-    [GraphQLDescription(
-        "The playlist description. _Only returned for modified, verified playlists, otherwise null_."
-    )]
+    [GraphQLDescription("Describes the playlist, what to expect and entices the user to listen.")]
     public string? Description { get; set; }
 
     [GraphQLDescription("The playlist's tracks.")]

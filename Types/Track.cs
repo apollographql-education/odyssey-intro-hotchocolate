@@ -2,11 +2,11 @@
 
 namespace Odyssey.Liftoff;
 
-[GraphQLDescription("Spotify catalog information for a track.")]
+[GraphQLDescription("A single audio file, usually a song.")]
 public class Track
 {
     [ID]
-    [GraphQLDescription("The Spotify ID for the track.")]
+    [GraphQLDescription("The ID for the track.")]
     public string Id { get; }
 
     [GraphQLDescription("The name of the track.")]
@@ -20,7 +20,7 @@ public class Track
     )]
     public bool Explicit { get; set; }
 
-    [GraphQLDescription("The Spotify URI for the track.")]
+    [GraphQLDescription("The URI for the track, usually a Spotify link.")]
     public string Uri { get; set; }
 
     public Track(string id, string name, string uri)
